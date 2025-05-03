@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2023 The Android Open Source Project
-# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2025 The Android Open Source Project
+# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xtc/sp9820e_xtc
+DEVICE_PATH := device/xiaoxun/Mi Kids Smartwatch
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -24,15 +24,15 @@ TARGET_USES_64_BIT_BINDER := true
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sp9820e_xtc
+TARGET_BOOTLOADER_BOARD_NAME := SW772
 TARGET_NO_BOOTLOADER := true
 
 # Display
-TARGET_SCREEN_DENSITY := 240
+TARGET_SCREEN_DENSITY := 120
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 buildvariant=user productname=I16 appjenkins=847 modemjenkins=18.35.3 \ buildsoftversion=2.0.3
+BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x05400000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -40,8 +40,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
-TARGET_KERNEL_CONFIG := sp9820e_xtc_defconfig
-TARGET_KERNEL_SOURCE := kernel/xtc/sp9820e_xtc
+TARGET_KERNEL_CONFIG := Mi Kids Smartwatch_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaoxun/Mi Kids Smartwatch
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -54,8 +54,8 @@ endif
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_BOOTIMAGE_PARTITION_SIZE := 12363776
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 12363776
+BOARD_BOOTIMAGE_PARTITION_SIZE := 17590784
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 17590784
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -63,7 +63,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
-TARGET_BOARD_PLATFORM := sp9820e
+TARGET_BOARD_PLATFORM := sl8521e
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
