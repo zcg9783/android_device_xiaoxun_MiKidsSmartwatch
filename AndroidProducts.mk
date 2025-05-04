@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_Mi Kids Smartwatch.mk
+    $(LOCAL_DIR)/omni_Mi_Kids_Smartwatch.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_Mi Kids Smartwatch-user \
-    omni_Mi Kids Smartwatch-userdebug \
-    omni_Mi Kids Smartwatch-eng
+    omni_Mi_Kids_Smartwatch-user \
+    omni_Mi_Kids_Smartwatch-userdebug \
+    omni_Mi_Kids_Smartwatch-eng

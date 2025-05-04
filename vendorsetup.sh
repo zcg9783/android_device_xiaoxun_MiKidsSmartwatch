@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_Mi Kids Smartwatch-user
-add_lunch_combo omni_Mi Kids Smartwatch-userdebug
-add_lunch_combo omni_Mi Kids Smartwatch-eng
+add_lunch_combo omni_Mi_Kids_Smartwatch-user
+add_lunch_combo omni_Mi_Kids_Smartwatch-userdebug
+add_lunch_combo omni_Mi_Kids_Smartwatch-eng

@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),Mi Kids Smartwatch)
+ifeq ($(TARGET_DEVICE),Mi_Kids_Smartwatch)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

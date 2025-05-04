@@ -1,4 +1,4 @@
-# Android device tree for Xiaoxun MiKidsWatch (Mi Kids Smartwatch)
+# Android device tree for Xiaoxun MiKidsWatch (Mi_Kids_Smartwatch)
 
 ```
 #

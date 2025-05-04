@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=Mi Kids Smartwatch
+DEVICE=Mi_Kids_Smartwatch
 VENDOR=xiaoxun
 
 # Load extract_utils and do some sanity checks
